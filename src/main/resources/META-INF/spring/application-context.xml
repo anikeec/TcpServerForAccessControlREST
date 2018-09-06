@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:repository="http://www.springframework.org/schema/data/repository"
+    xsi:schemaLocation="http://www.springframework.org/schema/data/repository http://www.springframework.org/schema/data/repository/spring-repository.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:property-placeholder/>
+    
+    <bean id="logWriter"
+          class="com.apu.TcpServerForAccessControlREST.utils.logging.LogWriter"/>
+
+<!--     <bean id="dataSource" destroy-method="close" class="org.apache.commons.dbcp2.BasicDataSource"> -->
+<!--         <property name="driverClassName" value="com.mysql.jdbc.Driver"/> -->
+<!--         <property name="url" value="jdbc:mysql://localhost:3306/accesscontroldb"/> -->
+<!--         <property name="username" value="app"/> -->
+<!--         <property name="password" value="qwerty"/> -->
+<!--         <property name="initialSize" value="5"/> -->
+<!--     </bean>  -->
+
+</beans>
